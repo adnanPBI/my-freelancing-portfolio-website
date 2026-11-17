@@ -1,0 +1,7 @@
+/* Shared and theme-neutral appearance control, independent of individual layouts. */
+.theme-dock { position: fixed; z-index: 190; left: max(16px, env(safe-area-inset-left)); bottom: max(16px, env(safe-area-inset-bottom)); display: flex; align-items: center; gap: 10px; padding: 9px 11px; background: #111c24; color: #f0f4ee; border: 1px solid #8797a4; border-radius: 12px; box-shadow: 0 12px 35px #0008; font-family: system-ui, sans-serif; font-size: 12px; font-weight: 650; letter-spacing: .035em; max-width: calc(100vw - 32px); }
+.theme-dock label { white-space: nowrap; }
+.theme-dock select { background: #233440; color: #fff; border: 1px solid #698696; border-radius: 7px; min-width: 116px; padding: 7px 27px 7px 9px; font: 500 14px system-ui, sans-serif; cursor: pointer; }
+.theme-dock select:focus-visible { outline: 3px solid #d7bd88; outline-offset: 3px; }
+@media(max-width: 420px){ .theme-dock { left: 12px; bottom: max(12px, env(safe-area-inset-bottom)); padding: 7px 9px; } .theme-dock select { min-width: 103px; } }
+@media print { .theme-dock { display: none !important; } }

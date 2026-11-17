@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "default": "industrial",
+  "themes": [
+    {
+      "id": "industrial",
+      "label": "Industrial",
+      "description": "Precision grids and metallic editorial styling",
+      "url": "/"
+    },
+    {
+      "id": "studio",
+      "label": "Studio",
+      "description": "Bright engineering workspace and interface-led storytelling",
+      "url": "/themes/studio/index.html"
+    }
+  ]
+}

@@ -1,18 +1,21 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-portfolio-theme="industrial">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#080d15">
   <meta name="description" content="Independent software engineering portfolio — 59 documented projects in enterprise platforms, AI, computer vision, mobile, cloud, security and immersive experiences.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Adnan | Engineering for the real world">
+  <meta property="og:title" content="Engineering Portfolio | Built for the real world">
   <meta property="og:description" content="An evidence-aware collection of software systems, digital products and engineering experiments.">
   <meta property="og:image" content="/assets/og-card.jpg">
   <meta name="robots" content="index,follow">
-  <title>Adnan | Engineering for the real world</title>
+  <title>Engineering Portfolio | Built for the real world</title>
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/themes/switcher.css">
+  <script src="/themes/preference.js"></script>
+  <script src="/themes/switcher.js" type="module"></script>
   <script src="/app.js" type="module"></script>
 </head>
 <body>
@@ -20,7 +23,7 @@
   <div id="scroll-line" class="scroll-line" aria-hidden="true"></div>
   <header class="site-header" id="top">
     <div class="container header-grid">
-      <a class="identity" href="#top" aria-label="Adnan engineering portfolio home"><span class="identity-mark">A<span>/</span></span><span class="identity-type">ADNAN <small>ENGINEERING PRACTICE</small></span></a>
+      <a class="identity" href="#top" aria-label="Engineering portfolio home"><span class="identity-mark">E<span>/</span></span><span class="identity-type">SYSTEMS <small>ENGINEERING PRACTICE</small></span></a>
       <nav class="desktop-navigation" aria-label="Primary navigation"><a href="#featured">Selected work</a><a href="#practice">Expertise</a><a href="#portfolio">Project index</a><a href="#method">Methodology</a></nav>
       <a class="header-contact" href="#contact">Discuss a project <span aria-hidden="true">↗</span></a>
       <button id="nav-toggle" class="nav-toggle" type="button" aria-controls="mobile-navigation" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
@@ -91,7 +94,7 @@
     <section class="section contact-section" id="contact" aria-labelledby="contact-title"><div class="contact-grid container"><div class="contact-copy"><div class="micro-title"><span class="micro-line"></span> 05 / COLLABORATE</div><h2 id="contact-title">LET'S BUILD<br><span>SOMETHING</span><br>USEFUL<span class="dot">.</span></h2><p>Have a complex platform to improve or a new digital product to launch? Send a focused project brief and the constraints that matter most.</p><div class="contact-fine"><span>PROJECT DISCUSSION</span><span>ENGINEERING • PRODUCT • SYSTEMS</span></div></div><div class="contact-form-wrap"><h3>Start a conversation <span>↗</span></h3><p>Inquiries are stored in a private site inbox for review; this is not an instant chat service.</p><form id="contact-form" novalidate><div class="form-duo"><label>Your name <input name="name" type="text" minlength="2" maxlength="100" placeholder="Your full name" autocomplete="name" required></label><label>Work email <input name="email" type="email" maxlength="200" placeholder="name@company.com" autocomplete="email" required></label></div><label>Project focus <select name="category" required><option value="">Select a discipline</option><option>Enterprise &amp; ERP</option><option>AI &amp; Computer Vision</option><option>Mobile &amp; Cross-platform</option><option>Desktop &amp; Security</option><option>Web &amp; Immersive 3D</option><option>Automation &amp; Integrations</option><option>Blockchain &amp; Fintech</option><option>Architecture &amp; Audits</option><option>Other</option></select></label><label>What are you building? <textarea name="message" rows="4" minlength="20" maxlength="3000" placeholder="Your objective, current stack, expected deliverables and approximate timeline…" required></textarea></label><input type="text" name="website" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true"><label class="consent-label"><input type="checkbox" name="consent" required><span>I consent to this information being stored so my inquiry can be reviewed and answered.</span></label><div class="form-bottom"><button id="contact-submit" type="submit" class="button-brass">Submit project inquiry <span>↗</span></button><span>NO TRACKING COOKIES</span></div><p id="form-status" class="form-status" role="status" aria-live="polite"></p></form></div></div></section>
   </main>
 
-  <footer class="site-footer"><div class="container"><div class="footer-upper"><div><a href="#top" class="footer-logo">ADNAN <span>/</span></a><p>Independent software engineering<br>for ambitious digital products.</p></div><div class="footer-links"><a href="#featured">Selected work</a><a href="#practice">Expertise</a><a href="#portfolio">Project index</a><a href="#contact">Contact</a></div></div><div class="footer-bottom"><span>© <span id="year">2026</span> ADNAN / ENGINEERING PORTFOLIO</span><span>ILLUSTRATIONS ARE CONCEPTUAL. CASE STATUS IS DOCUMENTED, NOT CERTIFIED.</span><button type="button" id="motion-toggle" aria-pressed="false" title="Pause ambient motion">Ⅱ MOTION</button></div></div></footer>
+  <footer class="site-footer"><div class="container"><div class="footer-upper"><div><a href="#top" class="footer-logo">ENG <span>/</span></a><p>Independent software engineering<br>for ambitious digital products.</p></div><div class="footer-links"><a href="#featured">Selected work</a><a href="#practice">Expertise</a><a href="#portfolio">Project index</a><a href="#contact">Contact</a></div></div><div class="footer-bottom"><span>© <span id="year">2026</span> ENGINEERING / SELECTED WORK</span><span>ILLUSTRATIONS ARE CONCEPTUAL. CASE STATUS IS DOCUMENTED, NOT CERTIFIED.</span><button type="button" id="motion-toggle" aria-pressed="false" title="Pause ambient motion">Ⅱ MOTION</button></div></div></footer>
 
   <div id="project-dialog" class="project-dialog" role="presentation" hidden><div class="dialog-shade" data-dismiss></div><section class="dialog-panel" role="dialog" aria-modal="true" aria-labelledby="dialog-title" tabindex="-1"><button id="dialog-close" class="dialog-close" type="button" aria-label="Close case file">×</button><div id="dialog-body"></div></section></div>
 </body>

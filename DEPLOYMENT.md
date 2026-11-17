@@ -1,14 +1,13 @@
-# Deployment checklist — Adnan Industrial Portfolio
+# Multi-theme portfolio deployment
 
-**Scope:** distinct second portfolio, not a replacement for the original deployed site. There is no hosting URL included in this source; do not invent one.
+Deploy Node.js 22.13+ on a managed host with HTTPS and a durable disk. The repository is both frontend and backend; do not deploy it as a static-only site if you need the inquiry inbox.
 
-1. Run `npm test && npm run check`. Review `projects.json` and verify permission to publish each item.
-2. Choose a VPS, container host or other Node.js 22.13+ service with a **persistent disk**. This application has a server-backed form and inbox; it is not a static HTML-only package.
-3. Provision HTTPS and a secure domain; terminate TLS through a trusted proxy. Set `HOST=0.0.0.0` as appropriate and let the platform choose PORT.
-4. Set `ADMIN_TOKEN` in the host's secret manager to a unique random value of at least 16 characters, not checked into source; set `DATA_DIR` to a backed-up persistent path.
-5. Start `node server.js` using a managed process or container service. Proxy public HTTPS requests to the configured port. Never serve the source or persistent data directory as public static files.
-6. Test homepage, all 59 project covers, filtering, mobile menu, deep-link modals, inquiry submission, authenticated admin read, CSV export, bad-token rejection, consent validation and unexpected URL rejection.
-7. Configure database backups, limits on data retention, monitoring and legitimate administrator access. This version stores inbox records only, and **does not email notifications**.
-8. Confirm permissions/rights, privacy notice, accessibility, mobile breakpoints and published case statuses before sharing with paying clients.
+1. Run `npm run check && npm test` before release.
+2. Keep `.env` and `ADMIN_TOKEN` private. Provide a random secret with 16 or more characters; never embed it in HTML or JavaScript served to clients.
+3. Set `DATA_DIR` to a backed-up, durable path. The SQLite inquiry file must not be lost across redeployments.
+4. Start the service with `node server.js` and proxy HTTPS traffic to the configured `HOST` and `PORT`.
+5. Confirm `/`, `/themes/studio/index.html`, `/themes/manifest.json`, `/projects.json`, `/assets/`, and `/admin.html` behave as expected. Keep `/api/admin/*` authenticated.
+6. Test both theme choices, persistence on revisit, project deep links, keyboard navigation, category filters, inquiry submission and admin read/delete/export. Verify mobile layouts at 320px and 390px.
+7. Keep deployment backup/retention, privacy and security policies reviewed before publicizing the site. No automatic inquiry-email notification is included.
 
-For a **read-only static review**, publish `index.html`, `styles.css`, `app.js`, `projects.json` and the `/assets` directory at the site root, but **disable or replace the inquiry form** because `/api/inquiries` is unavailable on static hosting. This review package does not pretend otherwise.
+**Static-only preview:** the two presentations and catalog can be served from a static host, but the inquiry form will not save without the Node.js backend. Disable the form for static preview or provide a real API. Do not claim successful submissions when no inbox is connected.

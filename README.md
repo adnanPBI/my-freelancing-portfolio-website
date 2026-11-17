@@ -1,57 +1,49 @@
-# Adnan / Engineering for the Real World
+# Engineering Portfolio — Multiple Themes
 
-**Source:** https://github.com/adnanPBI/my-freelancing-portfolio-website  
-**Build status:** `.github/workflows/validate.yml` runs syntax, backend/API and portfolio-integrity tests on push and PR.
+A full-stack, responsive portfolio showcasing **59 project dossiers across eight engineering disciplines**. Two original visual presentations can be switched without changing content or duplicating inquiry data.
 
-The repository includes an existing LICENSE file inherited from the repository. Review its licensing terms before distributing client-specific assets or proprietary code.
+## Available themes
 
-A second, ReserveChain-inspired **industrial editorial portfolio** — a wholly original Adnan website design, not a replica or sublicense of ReserveChain content. The design language references the earlier work's institutional visual discipline, metallic material language, precision grids, and evidence-oriented layout. ReserveChain is included only as one clearly labeled case study in the portfolio.
+- **Industrial** (default): technical editorial design, metallic accents, large typographic sections and engineering illustrations. URL: `/`.
+- **Studio**: the original interface-led portfolio with luminous accents, interactive dashboard artwork and project panels. URL: `/themes/studio/index.html`.
 
-## Includes
+Both provide the same project index, filtering, search, category browsing, project dossiers and contact form. Use the **Theme** selector at the lower-left. Preference is retained on the visitor's device. Future themes are registered in `themes/manifest.json`; see `themes/README.md`.
 
-- **59 project dossiers** across **eight disciplines**, sourced from the previously created portfolio catalog.
-- Six selected technical case files, eight linked specialization categories, and a search/filterable project index.
-- Accessible responsive navigation and case file overlays; deep links with `?project=<id>`; Escape and keyboard focus handling.
-- Original SVG engineering hero, favicon and OG artwork; existing portfolio-specific SVG covers are reused unchanged.
-- Reduced-motion support, animation pause, desktop/tablet/mobile layout styles and SEO metadata.
-- A real server-side inquiry API and **protected administrator inbox** with export/delete, backed by Node.js built-in SQLite. No third-party runtime npm dependencies.
-- Zero synthetic testimonials, fake metrics or invented project outcomes. All case files label their documented stage and conceptual imagery.
+## Source map
 
-## Run locally
+| Path | Responsibility |
+| --- | --- |
+| `index.html`, `styles.css`, `app.js` | Industrial presentation (default) |
+| `themes/studio/` | Studio presentation, self-contained HTML/CSS/JS |
+| `themes/manifest.json` | Registry of available presentations |
+| `themes/switcher.*` | Shared accessible theme selector |
+| `themes/preference.js` | Redirect to a previously selected Studio theme |
+| `projects.json` | Single source of truth for all 59 cases |
+| `assets/` | Shared illustrations, favicon, hero art and social image |
+| `server.js` | HTTP server and SQLite inquiry API |
+| `admin.html`, `admin.js` | Protected inbox admin client |
+| `tests/` | API, content, privacy and theme regression checks |
 
-Requires Node.js **22.13+** (Node 24 recommended).
+## Run
 
-```bash
-cp .env.example .env
-# Fill ADMIN_TOKEN locally (a long random secret). Do not commit .env.
-# Node's built-in --env-file option is available when setting credentials.
-HOST=127.0.0.1 PORT=3000 DATA_DIR=./data node --env-file=.env server.js
-```
-
-For read-only preview, you can simply run `npm start` (the admin inbox remains locked until a valid `ADMIN_TOKEN` is configured). The inquiry form saves to the local SQLite file `data/inquiries.sqlite`; messages do **not** send email automatically. Do not assume access to inquiries from another device without a shared, durable deployment.
-
-Open `http://127.0.0.1:3000/` and, if configured, the private inbox at `/admin.html`.
-
-## Customize
-
-- `projects.json`: the 59 documented entries. Review every project's stage, wording, rights and portfolio disclosure before public distribution. Never disclose client-private source data or deployment secrets.
-- `app.js`: filters, case file overlays, categorized archive and form submit logic.
-- `styles.css`: midnight/navy, muted bronze and warm-cream design system; responsive layout.
-- `index.html`: homepage sections, writing and metadata.
-- `assets/hero-forge.svg`: original abstract metallic precision artwork.
-- `.env.example` / `DEPLOYMENT.md`: environment and hosting requirements.
-
-## Tests
+Node.js **22.13+** required (Node 24 recommended). No npm install is necessary.
 
 ```bash
-npm test
 npm run check
+npm test
+npm start
 ```
 
-The API test harness uses a temporary database and test token. Visual QA evidence in the companion ZIP was captured using a browser-rendered *inlined copy* of the site, because this environment blocked browser navigation to localhost. The actual Node HTTP server is tested independently. The visual package does **not** claim a live public hosting URL.
+Visit `http://127.0.0.1:3000` for Industrial, then choose **Studio** from the Theme selector. Direct theme links are available for review. The form submits to `/api/inquiries` and stores entries in the server-side SQLite database; it does not automatically send email.
 
-## Privacy and limitations
+To access `/admin.html`, configure `ADMIN_TOKEN` as a server-side secret (16+ random characters), and configure `DATA_DIR` on durable storage. See `.env.example` and `DEPLOYMENT.md`. Avoid running the inquiry backend on an ephemeral filesystem if messages must persist.
 
-The public project library contains the author's documented projects, implementation work, prototype concepts and technical studies; it is not a set of third-party-verified case studies. The 59 descriptions and SVG cover art came from the prior portfolio source rather than authenticated production product screenshots.
+## Extend themes
 
-**Important:** Node/SQLite needs a host with durable storage; ephemeral serverless functions alone are unsuitable for retaining inquiry submissions. Before using the site commercially, verify consent language, administrator access, anti-spam measures, data retention, applicable privacy obligations and public project publication rights. Review and remove any confidential information before deployment.
+Add a new presentation under `themes/<id>/`, keep `/projects.json` and `/api/inquiries` as shared contracts, and add one manifest item. See `themes/README.md` for the full steps. Existing bookmarks and case-file deep links continue to work.
+
+## Quality and disclosure
+
+Each entry identifies its documented stage. Concept illustrations do not represent verified production screenshots or customer endorsements. Review permission to publish client details, project descriptions and art before sharing commercially. Keep credentials, SQLite files, backups and test data out of Git. The existing repository license is preserved, subject to its terms.
+
+GitHub Actions (`.github/workflows/validate.yml`) runs syntax and test checks on commits and pull requests. A passing build does not imply a production deployment.

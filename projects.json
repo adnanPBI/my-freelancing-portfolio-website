@@ -650,7 +650,7 @@
     "id": "bimflow-studio",
     "title": "BIMFlow Studio",
     "category": "Web & Immersive 3D",
-    "summary": "Building-information-modeling inspired visual studio and digital workflow concept.",
+    "summary": "Building-information-modeling visual studio and digital workflow concept.",
     "stack": [
       "3D",
       "BIM",
@@ -658,7 +658,7 @@
     ],
     "stage": "Prototype",
     "featured": false,
-    "challenge": "Building-information-modeling inspired visual studio and digital workflow concept.",
+    "challenge": "Building-information-modeling visual studio and digital workflow concept.",
     "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
   },
   {
@@ -814,7 +814,7 @@
     "featured": true,
     "challenge": "Represent copper powder and nickel wire assets with testable smart contracts and evidence flows.",
     "approach": "ERC-20 contract/tests, Sepolia deployment artifacts, publication audit design and frontend/WordPress handoff checks.",
-    "link": "https://github.com/adnanPBI/industrial-metal-backed-rwa"
+    "link": "https://reservechain.io/"
   },
   {
     "id": "smartcredit-finance-platform",

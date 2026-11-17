@@ -18,7 +18,7 @@ const add=db.prepare('INSERT INTO inquiries(created_at,name,email,category,messa
 const select=db.prepare('SELECT id,created_at,name,email,category,message,consent FROM inquiries ORDER BY id DESC LIMIT 1000');
 const del=db.prepare('DELETE FROM inquiries WHERE id=?');
 const recent=new Map();
-const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.svg':'image/svg+xml','.png':'image/png','.ico':'image/x-icon','.txt':'text/plain; charset=utf-8'};
+const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.svg':'image/svg+xml','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg','.ico':'image/x-icon','.txt':'text/plain; charset=utf-8'};
 const security={
  'X-Content-Type-Options':'nosniff','Referrer-Policy':'strict-origin-when-cross-origin','X-Frame-Options':'DENY',
  'Content-Security-Policy':"default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; form-action 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'",
@@ -54,7 +54,7 @@ async function handler(req,res){
   }
   if(pathname.startsWith('/api/')){json(res,404,{error:'Unknown API route.'});return}
   if(req.method!=='GET'&&req.method!=='HEAD'){json(res,405,{error:'Method not allowed.'});return}
-  const file=pathname==='/'?'/index.html':pathname;const abs=path.resolve(root,'.'+decodeURIComponent(file));const rel=path.relative(root,abs);
+  let file=pathname==='/'?'/index.html':pathname; if(file.endsWith('/')) file+='index.html';const abs=path.resolve(root,'.'+decodeURIComponent(file));const rel=path.relative(root,abs);
   if(rel.startsWith('..')||path.isAbsolute(rel)||rel.split(path.sep).some(t=>t.startsWith('.')||t==='data')||['server.js','package.json','package-lock.json','README.md','DEPLOYMENT.md'].includes(path.basename(abs))||abs.includes(`${path.sep}tests${path.sep}`)){json(res,404,{error:'Not found.'});return}
   let stats;try{stats=fs.statSync(abs)}catch{json(res,404,{error:'Not found.'});return}if(!stats.isFile()){json(res,404,{error:'Not found.'});return}
   const ext=path.extname(abs),type=types[ext];if(!type){json(res,404,{error:'Not found.'});return}
