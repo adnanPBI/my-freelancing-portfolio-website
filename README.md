@@ -17,7 +17,7 @@ Both provide the same project index, filtering, search, category browsing, proje
 | `themes/studio/` | Studio presentation, self-contained HTML/CSS/JS |
 | `themes/manifest.json` | Registry of available presentations |
 | `themes/switcher.*` | Shared accessible theme selector |
-| `themes/preference.js` | Redirect to a previously selected Studio theme |
+| `themes/preference.js` | Redirect to any previously selected registered theme |
 | `projects.json` | Single source of truth for all 59 cases |
 | `assets/` | Shared illustrations, favicon, hero art and social image |
 | `server.js` | HTTP server and SQLite inquiry API |

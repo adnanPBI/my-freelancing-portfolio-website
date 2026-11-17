@@ -22,6 +22,8 @@ test('both registered themes use one content dataset and real switcher',()=>{
   assert.match(load('themes/studio/app.js'),/\/projects\.json/);
   assert.match(load('themes/switcher.js'),/\/themes\/manifest\.json/);
   assert.match(load('themes/switcher.js'),/localStorage\.setItem/);
+  assert.match(load('themes/preference.js'),/themes\/manifest\.json/);
+  assert.match(load('themes/preference.js'),/config\?\.themes\?\.find/);
 });
 
 test('no personal name or visual-reference marketing remains in tracked source',()=>{

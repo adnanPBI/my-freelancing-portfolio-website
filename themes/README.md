@@ -5,7 +5,7 @@ Both presentations use the shared `../../projects.json`, `/assets/cover-*.svg`, 
 - **Industrial:** `/`
 - **Studio:** `/themes/studio/index.html`
 
-The default homepage honors a previously selected Studio preference. To open Industrial explicitly, choose it from the switcher. Deep links using `?project=<project-id>` continue to work in both designs.
+The default homepage honors a previously selected theme preference. To open Industrial explicitly, choose it from the switcher. Deep links using `?project=<project-id>` continue to work in both designs.
 
 ## Add another theme
 

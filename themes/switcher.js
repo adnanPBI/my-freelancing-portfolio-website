@@ -24,7 +24,7 @@ async function initThemeSwitch() {
     const themes = config?.themes;
     if (!Array.isArray(themes) || !themes.length) throw new Error('Empty theme registry');
     for (const theme of themes) {
-      if (!theme.id || !theme.label || typeof theme.url !== 'string' || !theme.url.startsWith('/')) continue;
+      if (!theme.id || !theme.label || typeof theme.url !== 'string' || !theme.url.startsWith('/') || theme.url.startsWith('//')) continue;
       const option = document.createElement('option');
       option.value = theme.id;
       option.textContent = theme.label;
@@ -38,6 +38,7 @@ async function initThemeSwitch() {
       if (!selected) return;
       try { localStorage.setItem('engineering-portfolio-theme', selected.id); } catch {}
       const url = new URL(selected.url, location.origin);
+      if (url.origin !== location.origin) return;
       const project = new URLSearchParams(location.search).get('project');
       if (project) url.searchParams.set('project', project);
       if (location.hash === '#contact') url.hash = '#contact';
