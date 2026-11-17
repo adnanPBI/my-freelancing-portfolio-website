@@ -1,0 +1,13 @@
+{
+  "name": "adnan-engineering-portfolio",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "engines": {"node": ">=22.13.0"},
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test tests/*.test.js",
+    "check": "node --check server.js && node --check app.js && node --check admin.js"
+  }
+}

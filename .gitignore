@@ -1,0 +1,21 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+# Persistence and backups (private inquiries)
+data/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.db
+backups/
+# Generated/dependency/test files
+node_modules/
+coverage/
+.nyc_output/
+.DS_Store
+*.log
+.tmp/
+tmp/

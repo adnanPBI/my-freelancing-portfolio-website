@@ -1,0 +1,909 @@
+[
+  {
+    "id": "weaving-erp-google-sheets-sync",
+    "title": "Weaving ERP & Google Sheets Sync",
+    "category": "Enterprise & ERP",
+    "summary": "Production-oriented weaving operations platform with guarded Google Sheets to MySQL synchronization, provenance and owner approvals.",
+    "stack": [
+      "PHP",
+      "MySQL",
+      "Google Sheets",
+      "TypeScript"
+    ],
+    "stage": "In progress",
+    "featured": true,
+    "challenge": "Reconcile live mill activity while preserving historical identity, original records and owner-approved exceptions.",
+    "approach": "Incremental importer, source-identity conflict resolution, guarded apply, recovery checkpoints, cron instrumentation and replay verification."
+  },
+  {
+    "id": "freight-cost-manager",
+    "title": "Freight Cost Manager",
+    "category": "Enterprise & ERP",
+    "summary": "Corporate shipping and freight-cost workflows with structured cost capture, calculation and operational views.",
+    "stack": [
+      "Business applications",
+      "Data workflows",
+      "Reporting"
+    ],
+    "stage": "Implementation",
+    "featured": false,
+    "challenge": "Corporate shipping and freight-cost workflows with structured cost capture, calculation and operational views.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "pharmaceutical-patient-records",
+    "title": "Pharmaceutical Patient Records",
+    "category": "Enterprise & ERP",
+    "summary": "Patient-record management concept covering operational data integrity, record flows and privacy constraints.",
+    "stack": [
+      "Business systems",
+      "Healthcare",
+      "Data modeling"
+    ],
+    "stage": "Architecture",
+    "featured": false,
+    "challenge": "Patient-record management concept covering operational data integrity, record flows and privacy constraints.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "django-application-backbone",
+    "title": "Django Application Backbone",
+    "category": "Enterprise & ERP",
+    "summary": "Modular Django-based backend architecture designed to grow with changing business requirements.",
+    "stack": [
+      "Python",
+      "Django",
+      "API design"
+    ],
+    "stage": "Architecture",
+    "featured": false,
+    "challenge": "Modular Django-based backend architecture designed to grow with changing business requirements.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "laravel-otp-refactor",
+    "title": "Laravel OTP Refactor",
+    "category": "Enterprise & ERP",
+    "summary": "Authentication flow and one-time-password refactoring for a Laravel application.",
+    "stack": [
+      "PHP",
+      "Laravel",
+      "Authentication"
+    ],
+    "stage": "Implementation",
+    "featured": false,
+    "challenge": "Authentication flow and one-time-password refactoring for a Laravel application.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "sharepoint-delete-protection",
+    "title": "SharePoint Delete Protection",
+    "category": "Enterprise & ERP",
+    "summary": "SharePoint document deletion-protection and governance architecture for safer information operations.",
+    "stack": [
+      "Microsoft 365",
+      "SharePoint",
+      "Governance"
+    ],
+    "stage": "Architecture",
+    "featured": false,
+    "challenge": "SharePoint document deletion-protection and governance architecture for safer information operations.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "cleaning-operations-platform",
+    "title": "Cleaning Operations Platform",
+    "category": "Enterprise & ERP",
+    "summary": "Czech-language scheduling, assignments, staff chat, time tracking, supplies and reporting across mobile and admin web.",
+    "stack": [
+      "React Native",
+      "Admin web",
+      "Scheduling",
+      "Czech"
+    ],
+    "stage": "In progress",
+    "featured": true,
+    "challenge": "Coordinate cleaners, administrators and recurring jobs within a role-based multilingual workflow.",
+    "approach": "Cross-platform worker app, admin-controlled scheduling, photo uploads, notifications and a production-backend hardening plan."
+  },
+  {
+    "id": "yolo-detection-v2",
+    "title": "YOLO Detection V2",
+    "category": "AI & Computer Vision",
+    "summary": "Object-detection pipeline and evaluation harness with 53 reported synthetic tests.",
+    "stack": [
+      "Python",
+      "YOLO",
+      "Computer vision",
+      "Testing"
+    ],
+    "stage": "Implementation",
+    "featured": true,
+    "challenge": "Establish repeatable object-detection behavior under changing inputs and model conditions.",
+    "approach": "Detection modules, deterministic synthetic test cases and validation workflows; field accuracy needs separate evaluation."
+  },
+  {
+    "id": "gcc-license-plate-recognition",
+    "title": "GCC License Plate Recognition",
+    "category": "AI & Computer Vision",
+    "summary": "Regional automatic number-plate recognition for camera-based workflows.",
+    "stack": [
+      "Python",
+      "OpenCV",
+      "OCR",
+      "ANPR"
+    ],
+    "stage": "Implementation",
+    "featured": false,
+    "challenge": "Regional automatic number-plate recognition for camera-based workflows.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "eye-gaze-calibration-system",
+    "title": "Eye & Gaze Calibration System",
+    "category": "AI & Computer Vision",
+    "summary": "Pupil detection, head-pose tracking and 3D gaze-to-workspace mapping with infrared and global-shutter cameras.",
+    "stack": [
+      "Python",
+      "OpenCV",
+      "Camera SDK",
+      "3D calibration"
+    ],
+    "stage": "In progress",
+    "featured": true,
+    "challenge": "Reduce jitter, drift and gaze estimation errors in dynamic, naturally lit workspaces.",
+    "approach": "IR/USB camera adapters, pupil tracking, head-pose estimation, spatial calibration, coordinate transformation and tuning."
+  },
+  {
+    "id": "invoice-ocr-with-gemma-3",
+    "title": "Invoice OCR with Gemma 3",
+    "category": "AI & Computer Vision",
+    "summary": "Intelligent invoice extraction using OCR and Gemma-based document understanding.",
+    "stack": [
+      "Python",
+      "OCR",
+      "Gemma 3",
+      "Document AI"
+    ],
+    "stage": "Implementation",
+    "featured": false,
+    "challenge": "Intelligent invoice extraction using OCR and Gemma-based document understanding.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "arabic-legal-ocr",
+    "title": "Arabic Legal OCR",
+    "category": "AI & Computer Vision",
+    "summary": "Arabic legal-document recognition and structured extraction workflow.",
+    "stack": [
+      "Arabic OCR",
+      "Document AI",
+      "Text processing"
+    ],
+    "stage": "Exploration",
+    "featured": false,
+    "challenge": "Arabic legal-document recognition and structured extraction workflow.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "face-redaction-pipeline",
+    "title": "Face Redaction Pipeline",
+    "category": "AI & Computer Vision",
+    "summary": "Privacy-oriented computer vision for identifying and masking faces in images or footage.",
+    "stack": [
+      "Python",
+      "Computer vision",
+      "Privacy"
+    ],
+    "stage": "Implementation",
+    "featured": false,
+    "challenge": "Privacy-oriented computer vision for identifying and masking faces in images or footage.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "offline-object-detector",
+    "title": "Offline Object Detector",
+    "category": "AI & Computer Vision",
+    "summary": "Local inference-focused object detection without dependence on a cloud API.",
+    "stack": [
+      "Python",
+      "On-device inference",
+      "Vision"
+    ],
+    "stage": "Implementation",
+    "featured": false,
+    "challenge": "Local inference-focused object detection without dependence on a cloud API.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "python-rag-backbone",
+    "title": "Python RAG Backbone",
+    "category": "AI & Computer Vision",
+    "summary": "Document ingestion, retrieval and answer generation patterns for a RAG-based knowledge system.",
+    "stack": [
+      "Python",
+      "Retrieval",
+      "LLM",
+      "RAG"
+    ],
+    "stage": "Architecture",
+    "featured": false,
+    "challenge": "Document ingestion, retrieval and answer generation patterns for a RAG-based knowledge system.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "offline-cuda-text-to-speech",
+    "title": "Offline CUDA Text-to-Speech",
+    "category": "AI & Computer Vision",
+    "summary": "GPU-assisted local speech generation pipeline designed for offline execution.",
+    "stack": [
+      "Python",
+      "CUDA",
+      "Speech AI"
+    ],
+    "stage": "Implementation",
+    "featured": false,
+    "challenge": "GPU-assisted local speech generation pipeline designed for offline execution.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "audio-stream-monitoring",
+    "title": "Audio Stream Monitoring",
+    "category": "AI & Computer Vision",
+    "summary": "Audio-stream observation and event-monitoring workflows.",
+    "stack": [
+      "Audio processing",
+      "Monitoring",
+      "Python"
+    ],
+    "stage": "Implementation",
+    "featured": false,
+    "challenge": "Audio-stream observation and event-monitoring workflows.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "aster-booking-ordering",
+    "title": "Aster Booking & Ordering",
+    "category": "Mobile & Cross-platform",
+    "summary": "Browse services, select appointments or products, manage a cart and confirm bookings across phone and tablet layouts.",
+    "stack": [
+      "Mobile apps",
+      "Android",
+      "iOS",
+      "Booking"
+    ],
+    "stage": "In progress",
+    "featured": true,
+    "challenge": "Bring browsing, selection and checkout into a short, intuitive customer journey.",
+    "approach": "App flows, cart and booking screens, backend-order integration plan and Android/iOS build validation work."
+  },
+  {
+    "id": "rise-bionics-3d-scan-uploader",
+    "title": "Rise Bionics 3D Scan Uploader",
+    "category": "Mobile & Cross-platform",
+    "summary": "Swift-based clinical 3D scan capture and lossless resumable upload assignment for unreliable mobile networks.",
+    "stack": [
+      "Swift",
+      "iOS",
+      "LiDAR",
+      "S3",
+      "FastAPI"
+    ],
+    "stage": "In progress",
+    "featured": true,
+    "challenge": "Protect large clinical scan transfers on unstable 4G while delivering usable previews quickly.",
+    "approach": "Preview-first upload, chunk resume, integrity checks, OBJ/STL planning and AWS Mumbai backend architecture."
+  },
+  {
+    "id": "meridian-risk-mobile-app",
+    "title": "Meridian Risk Mobile App",
+    "category": "Mobile & Cross-platform",
+    "summary": "High-fidelity mobile risk-management UI with interactive React/Vite screens.",
+    "stack": [
+      "React",
+      "Vite",
+      "Mobile UI"
+    ],
+    "stage": "Implementation",
+    "featured": false,
+    "challenge": "High-fidelity mobile risk-management UI with interactive React/Vite screens.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "giving-local-marketplace",
+    "title": "Giving Local Marketplace",
+    "category": "Mobile & Cross-platform",
+    "summary": "Cross-platform donation and community marketplace app workflows.",
+    "stack": [
+      "Cross-platform",
+      "Mobile app",
+      "Marketplace"
+    ],
+    "stage": "Implementation",
+    "featured": false,
+    "challenge": "Cross-platform donation and community marketplace app workflows.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "android-family-tracker",
+    "title": "Android Family Tracker",
+    "category": "Mobile & Cross-platform",
+    "summary": "Family coordination and location-sharing app work with mobile privacy considerations.",
+    "stack": [
+      "Android",
+      "Location services",
+      "Mobile"
+    ],
+    "stage": "Prototype",
+    "featured": false,
+    "challenge": "Family coordination and location-sharing app work with mobile privacy considerations.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "android-control-center",
+    "title": "Android Control Center",
+    "category": "Mobile & Cross-platform",
+    "summary": "System-style Android control and utility interface explorations.",
+    "stack": [
+      "Android",
+      "Kotlin",
+      "Mobile UI"
+    ],
+    "stage": "Prototype",
+    "featured": false,
+    "challenge": "System-style Android control and utility interface explorations.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "kotlin-email-client",
+    "title": "Kotlin Email Client",
+    "category": "Mobile & Cross-platform",
+    "summary": "Android email-client work built around native Kotlin app patterns.",
+    "stack": [
+      "Kotlin",
+      "Android",
+      "Email"
+    ],
+    "stage": "Implementation",
+    "featured": false,
+    "challenge": "Android email-client work built around native Kotlin app patterns.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "android-sms-forwarding",
+    "title": "Android SMS Forwarding",
+    "category": "Mobile & Cross-platform",
+    "summary": "Android automation for controlled message-forwarding workflows.",
+    "stack": [
+      "Android",
+      "Kotlin",
+      "Automation"
+    ],
+    "stage": "Implementation",
+    "featured": false,
+    "challenge": "Android automation for controlled message-forwarding workflows.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "uv-print-ar-studio",
+    "title": "UV Print AR Studio",
+    "category": "Mobile & Cross-platform",
+    "summary": "Augmented reality artwork placement, preview and quoting experience for custom print workflows.",
+    "stack": [
+      "AR",
+      "3D preview",
+      "Quoting"
+    ],
+    "stage": "Implementation",
+    "featured": false,
+    "challenge": "Augmented reality artwork placement, preview and quoting experience for custom print workflows.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "arvi-ar-simulator",
+    "title": "ARVI AR Simulator",
+    "category": "Mobile & Cross-platform",
+    "summary": "Augmented-reality simulator prototype exploring placement and interactive product experiences.",
+    "stack": [
+      "AR",
+      "3D",
+      "Interactive UX"
+    ],
+    "stage": "Prototype",
+    "featured": false,
+    "challenge": "Augmented-reality simulator prototype exploring placement and interactive product experiences.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "zephyr-lvgl-smartwatch",
+    "title": "Zephyr / LVGL Smartwatch",
+    "category": "Mobile & Cross-platform",
+    "summary": "Embedded smartwatch interface and device software concept using lightweight UI tooling.",
+    "stack": [
+      "Zephyr RTOS",
+      "LVGL",
+      "Embedded"
+    ],
+    "stage": "Prototype",
+    "featured": false,
+    "challenge": "Embedded smartwatch interface and device software concept using lightweight UI tooling.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "ray-live-streaming-studio",
+    "title": "RAY LIVE Streaming Studio",
+    "category": "Desktop & Security",
+    "summary": "Standalone Windows software scaffold for live-stream interaction and TikTok LIVE workflow orchestration.",
+    "stack": [
+      "Windows desktop",
+      "Streaming",
+      "Real-time events"
+    ],
+    "stage": "In progress",
+    "featured": true,
+    "challenge": "Design reliable stream event handling with a path from personal use to commercial desktop distribution.",
+    "approach": "Modular Windows architecture, interactive panels, service adapters and packaging/permissions plan."
+  },
+  {
+    "id": "owner-remote-mcp",
+    "title": "Owner Remote MCP",
+    "category": "Desktop & Security",
+    "summary": "Self-hosted remote-computer MCP with Windows/macOS device enrollment, command execution and guarded file operations.",
+    "stack": [
+      "Node.js",
+      "MCP",
+      "Windows",
+      "macOS",
+      "Remote access"
+    ],
+    "stage": "In progress",
+    "featured": true,
+    "challenge": "Provide owner-controlled access across machines without depending on third-party remote command quotas.",
+    "approach": "Agent/server separation, tunnel planning, local CLI, file-operation policies and cross-device setup."
+  },
+  {
+    "id": "programming-commander-mcp",
+    "title": "Programming Commander MCP",
+    "category": "Desktop & Security",
+    "summary": "Desktop programming and system tool connector with 41 Windows tools described in project history.",
+    "stack": [
+      "MCP",
+      "Windows",
+      "Automation",
+      "Node.js"
+    ],
+    "stage": "Implementation",
+    "featured": false,
+    "challenge": "Desktop programming and system tool connector with 41 Windows tools described in project history.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "windows-endpoint-dlp-agent",
+    "title": "Windows Endpoint DLP Agent",
+    "category": "Desktop & Security",
+    "summary": "Endpoint monitoring and data loss prevention client architecture for Windows environments.",
+    "stack": [
+      "Windows",
+      "Security",
+      "Endpoint agents"
+    ],
+    "stage": "Implementation",
+    "featured": false,
+    "challenge": "Endpoint monitoring and data loss prevention client architecture for Windows environments.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "privacyscanner-desktop",
+    "title": "PrivacyScanner Desktop",
+    "category": "Desktop & Security",
+    "summary": "Desktop privacy-audit source package focused on local security inspection; deployment not verified.",
+    "stack": [
+      "Desktop app",
+      "Privacy",
+      "Security"
+    ],
+    "stage": "Implementation",
+    "featured": false,
+    "challenge": "Desktop privacy-audit source package focused on local security inspection; deployment not verified.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "windows-ram-controller",
+    "title": "Windows RAM Controller",
+    "category": "Desktop & Security",
+    "summary": "Memory-management desktop utility with 218 reported simulator self-tests.",
+    "stack": [
+      "Windows",
+      "Process control",
+      "Testing"
+    ],
+    "stage": "Implementation",
+    "featured": false,
+    "challenge": "Memory-management desktop utility with 218 reported simulator self-tests.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "windows-process-controller",
+    "title": "Windows Process Controller",
+    "category": "Desktop & Security",
+    "summary": "Win32 process and application-control utility work.",
+    "stack": [
+      "Win32",
+      "Windows API",
+      "System tools"
+    ],
+    "stage": "Implementation",
+    "featured": false,
+    "challenge": "Win32 process and application-control utility work.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "soundping-tray-notifier",
+    "title": "SoundPing Tray Notifier",
+    "category": "Desktop & Security",
+    "summary": "Windows service notification utility with custom MP3/WAV alerts and tray behavior.",
+    "stack": [
+      "Windows",
+      "Tray app",
+      "Audio events"
+    ],
+    "stage": "Implementation",
+    "featured": false,
+    "challenge": "Windows service notification utility with custom MP3/WAV alerts and tray behavior.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "stackdeck-developer-utility",
+    "title": "StackDeck Developer Utility",
+    "category": "Desktop & Security",
+    "summary": "Developer-focused utility workspace and application workflow exploration.",
+    "stack": [
+      "Developer tools",
+      "Desktop UX"
+    ],
+    "stage": "Prototype",
+    "featured": false,
+    "challenge": "Developer-focused utility workspace and application workflow exploration.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "streaming-audio-player",
+    "title": "Streaming Audio Player",
+    "category": "Desktop & Security",
+    "summary": "Audio playback application with stream-oriented controls and interface work.",
+    "stack": [
+      "Audio",
+      "Media player",
+      "Application UI"
+    ],
+    "stage": "Implementation",
+    "featured": false,
+    "challenge": "Audio playback application with stream-oriented controls and interface work.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "convalt-energy-3d-campus",
+    "title": "Convalt Energy 3D Campus",
+    "category": "Web & Immersive 3D",
+    "summary": "Explorable industrial campus with procedural architecture, technical infrastructure and interior scene journeys.",
+    "stack": [
+      "Three.js",
+      "WebGL",
+      "3D environments",
+      "React"
+    ],
+    "stage": "In progress",
+    "featured": true,
+    "challenge": "Make complex facilities spatially understandable without losing browser usability.",
+    "approach": "3D structures and environments, streamed campus scenes, camera movement, performance work and WebXR compatibility planning.",
+    "link": "https://3d-landing-page-interior-exterior.vercel.app/"
+  },
+  {
+    "id": "loqelo-prelaunch-experience",
+    "title": "Loqelo Prelaunch Experience",
+    "category": "Web & Immersive 3D",
+    "summary": "Animated responsive prelaunch site with genuine interactive sections and a persistent signup pattern.",
+    "stack": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Node.js",
+      "SQLite"
+    ],
+    "stage": "Implementation",
+    "featured": true,
+    "challenge": "Combine motion-rich brand storytelling with a functional consent-aware signup workflow.",
+    "approach": "Modular scenes, responsive frontend, server-side signup, accessibility behavior and browser QA.",
+    "link": "https://loqelo-sigma.vercel.app/"
+  },
+  {
+    "id": "eigenkern-website-redesign",
+    "title": "Eigenkern Website Redesign",
+    "category": "Web & Immersive 3D",
+    "summary": "Distinctive Odoo web redesign direction centered on sober enterprise AI messaging and Waechter shadow-copy flow.",
+    "stack": [
+      "Odoo",
+      "Web design",
+      "Product storytelling"
+    ],
+    "stage": "Exploration",
+    "featured": false,
+    "challenge": "Distinctive Odoo web redesign direction centered on sober enterprise AI messaging and Waechter shadow-copy flow.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "aurelix-digital-experience",
+    "title": "AURELIX Digital Experience",
+    "category": "Web & Immersive 3D",
+    "summary": "Brand-led responsive website and interactive presentation work.",
+    "stack": [
+      "Web design",
+      "Interaction",
+      "Frontend"
+    ],
+    "stage": "Prototype",
+    "featured": false,
+    "challenge": "Brand-led responsive website and interactive presentation work.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "bimflow-studio",
+    "title": "BIMFlow Studio",
+    "category": "Web & Immersive 3D",
+    "summary": "Building-information-modeling inspired visual studio and digital workflow concept.",
+    "stack": [
+      "3D",
+      "BIM",
+      "Interface design"
+    ],
+    "stage": "Prototype",
+    "featured": false,
+    "challenge": "Building-information-modeling inspired visual studio and digital workflow concept.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "triple-double-real-estate",
+    "title": "Triple Double Real Estate",
+    "category": "Web & Immersive 3D",
+    "summary": "Real estate presentation and product website experience.",
+    "stack": [
+      "Web",
+      "Real estate",
+      "Frontend"
+    ],
+    "stage": "Prototype",
+    "featured": false,
+    "challenge": "Real estate presentation and product website experience.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "solar-shop-web-experience",
+    "title": "Solar Shop Web Experience",
+    "category": "Web & Immersive 3D",
+    "summary": "Solar product storefront design and commerce interface workflows.",
+    "stack": [
+      "E-commerce",
+      "Web",
+      "Product UX"
+    ],
+    "stage": "Prototype",
+    "featured": false,
+    "challenge": "Solar product storefront design and commerce interface workflows.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "evenir-cz-redesign",
+    "title": "evenir.cz Redesign",
+    "category": "Web & Immersive 3D",
+    "summary": "Czech-language website redesign direction with an Odoo-oriented delivery approach.",
+    "stack": [
+      "Odoo",
+      "UI design",
+      "Czech"
+    ],
+    "stage": "Exploration",
+    "featured": false,
+    "challenge": "Czech-language website redesign direction with an Odoo-oriented delivery approach.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "q-a-whatsapp-pwa",
+    "title": "Q&A WhatsApp PWA",
+    "category": "Web & Immersive 3D",
+    "summary": "Progressive web app concept combining Q&A workflows with WhatsApp-based handoff.",
+    "stack": [
+      "PWA",
+      "WhatsApp",
+      "Web app"
+    ],
+    "stage": "Prototype",
+    "featured": false,
+    "challenge": "Progressive web app concept combining Q&A workflows with WhatsApp-based handoff.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "zolv-website",
+    "title": "ZOLV Website",
+    "category": "Web & Immersive 3D",
+    "summary": "Modern web presence and branded interaction concept.",
+    "stack": [
+      "Web design",
+      "Frontend",
+      "Branding"
+    ],
+    "stage": "Prototype",
+    "featured": false,
+    "challenge": "Modern web presence and branded interaction concept.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "walmart-azure-data-scraper",
+    "title": "Walmart Azure Data Scraper",
+    "category": "Automation & Integrations",
+    "summary": "Retail data extraction and validation for Walmart store workflows with Azure integration.",
+    "stack": [
+      "Python",
+      "Azure",
+      "Web scraping",
+      "Test automation"
+    ],
+    "stage": "Implementation",
+    "featured": true,
+    "challenge": "Collect structured store data while keeping repeatable tests and hosted execution in scope.",
+    "approach": "Scraper and Azure environment setup, validation scripts and expanded automated test coverage."
+  },
+  {
+    "id": "mariano-s-retail-scraper",
+    "title": "Mariano’s Retail Scraper",
+    "category": "Automation & Integrations",
+    "summary": "Retail data collection and workflow automation for store-oriented information processing.",
+    "stack": [
+      "Automation",
+      "Scraping",
+      "Data pipelines"
+    ],
+    "stage": "Prototype",
+    "featured": false,
+    "challenge": "Retail data collection and workflow automation for store-oriented information processing.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "owner-cpanel-ssh-integration",
+    "title": "Owner cPanel & SSH Integration",
+    "category": "Automation & Integrations",
+    "summary": "Remote deployment and server operations workflow connecting local agents with cPanel infrastructure.",
+    "stack": [
+      "SSH",
+      "cPanel",
+      "MCP",
+      "Deployment"
+    ],
+    "stage": "In progress",
+    "featured": false,
+    "challenge": "Remote deployment and server operations workflow connecting local agents with cPanel infrastructure.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "retail-intelligence-pipeline",
+    "title": "Retail Intelligence Pipeline",
+    "category": "Automation & Integrations",
+    "summary": "Structured collection, normalization and validation of retail data for downstream analytics.",
+    "stack": [
+      "Python",
+      "ETL",
+      "Validation"
+    ],
+    "stage": "Architecture",
+    "featured": false,
+    "challenge": "Structured collection, normalization and validation of retail data for downstream analytics.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "reservechain-industrial-rwa",
+    "title": "ReserveChain Industrial RWA",
+    "category": "Blockchain & Fintech",
+    "summary": "Industrial metals tokenization prototype with Solidity contracts, testnet evidence and web/CMS integration work.",
+    "stack": [
+      "Solidity",
+      "Hardhat",
+      "Sepolia",
+      "WordPress",
+      "Web"
+    ],
+    "stage": "In progress",
+    "featured": true,
+    "challenge": "Represent copper powder and nickel wire assets with testable smart contracts and evidence flows.",
+    "approach": "ERC-20 contract/tests, Sepolia deployment artifacts, publication audit design and frontend/WordPress handoff checks.",
+    "link": "https://github.com/adnanPBI/industrial-metal-backed-rwa"
+  },
+  {
+    "id": "smartcredit-finance-platform",
+    "title": "SmartCredit Finance Platform",
+    "category": "Blockchain & Fintech",
+    "summary": "Credit-oriented financial product concepts spanning core workflows and platform architecture.",
+    "stack": [
+      "Fintech",
+      "Financial UX",
+      "Architecture"
+    ],
+    "stage": "Prototype",
+    "featured": false,
+    "challenge": "Credit-oriented financial product concepts spanning core workflows and platform architecture.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "document-intelligence-django-backbone",
+    "title": "Document Intelligence Django Backbone",
+    "category": "Architecture & Audits",
+    "summary": "Django service architecture for document intelligence pipelines and future integrations.",
+    "stack": [
+      "Django",
+      "API architecture",
+      "Document processing"
+    ],
+    "stage": "Architecture",
+    "featured": false,
+    "challenge": "Django service architecture for document intelligence pipelines and future integrations.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "medidocta-platform-review",
+    "title": "Medidocta Platform Review",
+    "category": "Architecture & Audits",
+    "summary": "Technical design and quality assessment of a healthcare platform.",
+    "stack": [
+      "Technical review",
+      "Healthcare",
+      "Systems"
+    ],
+    "stage": "Technical review",
+    "featured": false,
+    "challenge": "Technical design and quality assessment of a healthcare platform.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "offlinepos-codebase-audit",
+    "title": "OfflinePOS Codebase Audit",
+    "category": "Architecture & Audits",
+    "summary": "Offline-first point-of-sale source review, findings and suggested remediation path.",
+    "stack": [
+      "Code audit",
+      "Offline-first",
+      "Architecture"
+    ],
+    "stage": "Technical review",
+    "featured": false,
+    "challenge": "Offline-first point-of-sale source review, findings and suggested remediation path.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "enterprise-hr-technology-strategy",
+    "title": "Enterprise HR Technology Strategy",
+    "category": "Architecture & Audits",
+    "summary": "Stack recommendation and architecture decisions for a growing HR product.",
+    "stack": [
+      "Technology strategy",
+      "Security",
+      "HR"
+    ],
+    "stage": "Architecture",
+    "featured": false,
+    "challenge": "Stack recommendation and architecture decisions for a growing HR product.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  },
+  {
+    "id": "ocr-technical-selection-study",
+    "title": "OCR Technical Selection Study",
+    "category": "Architecture & Audits",
+    "summary": "Research into OCR pipeline options and trade-offs for document-heavy applications.",
+    "stack": [
+      "OCR evaluation",
+      "Research",
+      "Architecture"
+    ],
+    "stage": "Architecture",
+    "featured": false,
+    "challenge": "Research into OCR pipeline options and trade-offs for document-heavy applications.",
+    "approach": "Project scope and implementation approach documented in the working portfolio history; production outcomes require separate verification."
+  }
+]
