@@ -140,19 +140,77 @@
   },
   {
     "id": "eye-gaze-calibration-system",
-    "title": "Eye & Gaze Calibration System",
+    "title": "GazeSpace Studio — Eye Tracking & 3D Gaze",
     "category": "AI & Computer Vision",
-    "summary": "Pupil detection, head-pose tracking and 3D gaze-to-workspace mapping with infrared and global-shutter cameras.",
+    "summary": "Windows eye- and pupil-tracking studio with subject-calibrated screen gaze, 3D workspace mapping, camera SDK adapters, session replay, reporting, and tested portable builds.",
     "stack": [
       "Python",
       "OpenCV",
-      "Camera SDK",
-      "3D calibration"
+      "MediaPipe",
+      "NumPy / SciPy",
+      "PySide6 (Qt)",
+      "Basler pypylon",
+      "RealSense SDK",
+      "FastAPI",
+      "PyInstaller",
+      "GitHub Actions"
     ],
     "stage": "In progress",
     "featured": true,
-    "challenge": "Reduce jitter, drift and gaze estimation errors in dynamic, naturally lit workspaces.",
-    "approach": "IR/USB camera adapters, pupil tracking, head-pose estimation, spatial calibration, coordinate transformation and tuning."
+    "challenge": "Turn camera imagery into stable, bounded screen and 3D gaze coordinates while controlling jitter, drift, stale frames, device faults and calibration integrity.",
+    "approach": "Built a Windows desktop and CLI around OpenCV pupil processing, MediaPipe iris/head landmarks, subject-specific 16-target screen and measured 3D calibration, world-space ray/surface intersection, filtering, recording/replay, reports, and local SDK/API integration. Validated source and frozen software through Windows CI and camera-SDK emulation; real-rig accuracy remains to be measured.",
+    "link": "https://github.com/adnanPBI/gazespace-studio",
+    "repositoryAccess": "private",
+    "caseStudy": {
+      "version": "0.2.1",
+      "status": "Windows software verified · physical camera, human gaze accuracy and original-client integration pending",
+      "facts": [
+        {
+          "value": "225 / 225",
+          "label": "Full Windows tests",
+          "context": "SDK-enabled release job; zero failures or skips"
+        },
+        {
+          "value": "4 / 4",
+          "label": "Platform test jobs",
+          "context": "Windows + Linux, Python 3.11/3.12; optional SDK tests isolated"
+        },
+        {
+          "value": "60 / 60",
+          "label": "Packaged simulation",
+          "context": "Generated pupil frames; not human gaze measurements"
+        },
+        {
+          "value": "7",
+          "label": "Desktop workspaces",
+          "context": "Frozen Qt interface and bundled font rendering checked"
+        }
+      ],
+      "deliverables": [
+        "Native Windows Studio and command-line applications; two integrity-checked unsigned portable distributions.",
+        "Pupil ellipse detection, iris/face landmark features, blink rejection, head pose and image-quality diagnostics.",
+        "OpenCV USB/UVC capture, configurable exposure/gain/frame settings, Basler pypylon adapter, optional aligned-depth RealSense path.",
+        "Guided 16-target screen calibration, independent 9-point validation, drift checks, camera intrinsics and 3D-target training.",
+        "Camera-to-world transforms, gaze rays, bounded 3D surfaces, stereo/depth helpers and interactive workspace views.",
+        "Recording, replay, AOI dwell, gaze heatmaps, jitter analytics, and offline HTML/JSON/CSV reports.",
+        "Reusable Python integration adapter, authenticated localhost REST/WebSocket telemetry, Windows CI and acceptance documentation."
+      ],
+      "evidence": [
+        "Windows Server 2025 release CI: 225 automated tests passed with no failures, errors or skips.",
+        "Linux/Windows Python 3.11/3.12 matrix: four successful jobs; two optional SDK tests skipped per ordinary matrix job and exercised in release.",
+        "Frozen MediaPipe inference: 478 facial landmarks and both iris observations on a reference photo; not gaze ground truth.",
+        "Basler official SDK emulator: Mono8, Mono12 and BGR8Packed capture, control readback and lifecycle checks; no physical camera implied.",
+        "Frozen Studio: all seven pages painted and font-glyph rendering tested; source and frozen synthetic sessions exported reports.",
+        "Both Windows ZIPs independently verified, including 3,837 decompressed files per archive."
+      ],
+      "pending": [
+        "Physical IR/global-shutter camera, lens, IR illumination, driver, USB transport and RealSense/depth-device performance not yet measured.",
+        "Human pupil/head-pose ground truth, screen/3D gaze accuracy, real-person jitter/drift, and end-to-end sensor-to-display latency not yet measured.",
+        "Final integration into a client's existing Windows codebase, client acceptance and publisher signing not yet performed."
+      ],
+      "ciUrl": "https://github.com/adnanPBI/gazespace-studio/actions/runs/44299541968",
+      "visibilityNote": "Source code and CI evidence are in a private GitHub repository; access is available by request. The illustration is conceptual, not an application screenshot."
+    }
   },
   {
     "id": "invoice-ocr-with-gemma-3",

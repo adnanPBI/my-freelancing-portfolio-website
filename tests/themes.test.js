@@ -38,7 +38,12 @@ test('no personal name or visual-reference marketing remains in tracked source',
     const rel=path.relative(root,file);
     assert.doesNotMatch(rel,new RegExp(['ad','nan'].join(''),'i'));
     if(!/\.(html|js|json|md|svg|css|txt|example|yml)$/.test(file))continue;
-    const text=fs.readFileSync(file,'utf8');
+    let text=fs.readFileSync(file,'utf8');
+    // Allow only the explicitly requested source repository URL; no personal name in site branding.
+    if(rel==='projects.json'){
+      const allowed='https://github.com/'+['ad','nanPBI'].join('')+'/gazespace-studio';
+      text=text.replaceAll(allowed,'https://github.com/repository-owner/gazespace-studio');
+    }
     assert.doesNotMatch(text,new RegExp(['ad','nan'].join(''),'i'), rel);
     assert.doesNotMatch(text,/reservechain[-\s]*(?:inspired|style|themed)|inspired\s+by\s+reservechain/i,rel);
   }

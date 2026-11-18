@@ -18,3 +18,36 @@
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.hero-visual{transform:none}}
 /* Keep the portfolio's selected-work label separate from the existing conceptual cover labels. */
 .feature-num{left:auto;right:20px}
+/* Extended case evidence: industrial theme */
+
+.case-expanded{margin:30px 0 22px;display:grid;gap:23px}
+.case-status{margin:0;padding:16px 18px;display:grid;gap:8px;line-height:1.6}
+.case-status strong{font-size:11px;letter-spacing:.14em}
+.case-status span{font-size:13px}
+.case-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+.case-fact{min-width:0;display:flex;flex-direction:column;gap:7px;padding:16px}
+.case-fact strong{font-size:23px;letter-spacing:-.035em}
+.case-fact span{font-weight:750;font-size:12px}
+.case-fact small{font-size:11px;line-height:1.65}
+.case-section{padding-top:8px;border-top:1px solid}
+.case-section h3{font-size:17px;margin:5px 0 13px}
+.case-section ul{padding:0 0 0 21px;margin:0}
+.case-section li{font-size:13px;line-height:1.7;padding-bottom:9px;overflow-wrap:anywhere}
+.case-access{padding:15px 17px;font-size:12px;line-height:1.7}
+.case-access p{margin:0 0 8px}
+.case-access a{text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+@media(max-width:600px){.case-facts{grid-template-columns:1fr}.case-expanded{gap:19px}.case-fact strong{font-size:21px}}
+
+.case-expanded{color:#d5dee4}
+.case-status{border-left:3px solid var(--brass);background:#18242d}
+.case-status strong,.case-section h3{color:#f2d4a4}
+.case-fact{background:#15222d;border:1px solid #3c4a54}
+.case-fact strong{color:#f2d4a4}
+.case-fact span{color:#f0f2f3}
+.case-fact small{color:#b2bec8}
+.case-section{border-top-color:#3a4855}
+.case-section li{color:#d5dee4}
+.case-section li::marker{color:#cfa66a}
+.case-pending{border-top-color:#987951}
+.case-access{background:#101b26;border:1px solid #52606a}
+.case-access a{color:#f2cf90}
