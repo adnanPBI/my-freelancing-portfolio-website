@@ -141,7 +141,7 @@
   {
     "id": "eye-gaze-calibration-system",
     "title": "GazeSpace Studio — Eye Tracking & 3D Gaze",
-    "category": "AI & Computer Vision",
+    "category": "Value Added Projects",
     "summary": "Windows eye- and pupil-tracking studio with subject-calibrated screen gaze, 3D workspace mapping, camera SDK adapters, session replay, reporting, and tested portable builds.",
     "stack": [
       "Python",

@@ -3,6 +3,7 @@ const $$=(s,root=document)=>Array.from(root.querySelectorAll(s));
 const sanitize=(s)=>String(s??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 const field=(obj,key)=>sanitize(obj[key]||'');
 const categories=[
+  {name:'Value Added Projects',description:'Built and verified solutions with detailed engineering evidence',symbol:'✦'},
   {name:'Enterprise & ERP',description:'Operational workflows, data integrity and enterprise applications',symbol:'⌘'},
   {name:'AI & Computer Vision',description:'Visual intelligence, detection, OCR and applied machine learning',symbol:'◎'},
   {name:'Mobile & Cross-platform',description:'Native experiences and scalable Android / iOS product flows',symbol:'▣'},

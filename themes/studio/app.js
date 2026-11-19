@@ -1,4 +1,5 @@
 const categories = [
+  ['Value Added Projects','VERIFIED / SHOWCASE','Built engineering solutions with documented testing and deliverables','✦'],
   ['Enterprise & ERP','ERP / OPERATIONS','Enterprise applications, business logic, data integrity','▦'],
   ['AI & Computer Vision','INTELLIGENCE / VISION','Detection, document AI, speech and spatial tracking','◎'],
   ['Mobile & Cross-platform','APPS / DEVICES','Mobile experiences, scanning, AR and embedded UI','▯'],

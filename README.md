@@ -1,6 +1,6 @@
 # Engineering Portfolio — Multiple Themes
 
-A full-stack, responsive portfolio showcasing **59 project dossiers across eight engineering disciplines**. The AI & Computer Vision catalog includes the evidence-backed **GazeSpace Studio 0.2.1** Windows eye-tracking case study (upgraded in place from the original gaze-calibration entry). Two original visual presentations can be switched without changing content or duplicating inquiry data.
+A full-stack, responsive portfolio showcasing **59 project dossiers across nine engineering disciplines**. Two original visual presentations can be switched without changing content or duplicating inquiry data.
 
 ## Available themes
 
@@ -47,9 +47,3 @@ Add a new presentation under `themes/<id>/`, keep `/projects.json` and `/api/inq
 Each entry identifies its documented stage. Concept illustrations do not represent verified production screenshots or customer endorsements. Review permission to publish client details, project descriptions and art before sharing commercially. Keep credentials, SQLite files, backups and test data out of Git. The existing repository license is preserved, subject to its terms.
 
 GitHub Actions (`.github/workflows/validate.yml`) runs syntax and test checks on commits and pull requests. A passing build does not imply a production deployment.
-
-## GazeSpace Studio case file
-
-Search **GazeSpace** or select **AI & Computer Vision** in either theme. The existing bookmarked deep link `?project=eye-gaze-calibration-system` is preserved.
-
-The extended case file covers eye/pupil detection, subject-specific 2D/3D calibration, camera SDK adapters, recording/replay, analytics, SDK/API integration, the verified 225-test Windows software gate, four platform matrix jobs and frozen application checks. The corresponding GitHub source and CI evidence are **private and require access**. Physical IR/global-shutter camera performance, human gaze accuracy and client-specific integration are clearly labeled as pending. The cover is illustrative artwork, not a screenshot. Both themes use the shared `projects.json`.

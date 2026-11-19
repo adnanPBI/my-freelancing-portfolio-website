@@ -11,7 +11,7 @@ test('entire categorized portfolio and artwork are present',()=>{
   const projects=JSON.parse(load('projects.json'));
   assert.equal(projects.length,59);
   assert.equal(new Set(projects.map(p=>p.id)).size,59);
-  assert.equal(new Set(projects.map(p=>p.category)).size,8);
+  assert.equal(new Set(projects.map(p=>p.category)).size,9);
   for(const p of projects){
     assert.ok(p.title && p.summary && p.approach && p.challenge && p.stage, p.id);
     const cover=path.join(root,'assets',`cover-${p.id}.svg`);
@@ -47,7 +47,7 @@ test('GazeSpace Studio has a unique, evidence-backed case file in both themes',(
   assert.equal(matches.length,1,'Keep existing case bookmarks; do not duplicate');
   const p=matches[0];
   assert.match(p.title,/GazeSpace Studio/);
-  assert.equal(p.category,'AI & Computer Vision');
+  assert.equal(p.category,'Value Added Projects');
   assert.equal(p.featured,true);
   assert.equal(p.stage,'In progress');
   assert.equal(p.repositoryAccess,'private');
@@ -62,4 +62,16 @@ test('GazeSpace Studio has a unique, evidence-backed case file in both themes',(
   assert.match(load('app.js'),/renderCaseStudy\(p,sanitize\)/);
   assert.match(load('themes/studio/app.js'),/renderCaseStudy\(p,escapeHTML\)/);
   for(const style of ['styles.css','themes/studio/styles.css'])assert.match(load(style),/\.case-expanded/);
+});
+
+test('GazeSpace belongs to the Value Added category, not README prose',()=>{
+  const projects=JSON.parse(load('projects.json'));
+  assert.equal(projects.filter(p=>p.category==='Value Added Projects').length,1);
+  const project=projects.find(p=>p.id==='eye-gaze-calibration-system');
+  assert.equal(project.category,'Value Added Projects');
+  assert.equal(project.link,'https://github.com/'+['ad','nanPBI'].join('')+'/gazespace-studio');
+  assert.match(load('app.js'),/name:'Value Added Projects'/);
+  assert.match(load('themes/studio/app.js'),/\['Value Added Projects'/);
+  assert.doesNotMatch(load('README.md'),/GazeSpace Studio case file|GazeSpace Studio 0\.2\.1/);
+  assert.ok(project.caseStudy.deliverables.length>=7);
 });
